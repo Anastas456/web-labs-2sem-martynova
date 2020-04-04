@@ -2,6 +2,11 @@ body{
     font-family:Roboto Mono;
     margin:0 150px 0 150px;
 }
+@media print{
+    body{
+        margin:0 2cm 0 2cm;
+    }
+}
 header h1{
     font-family: Girassol;
     text-align: center;
@@ -13,10 +18,23 @@ h2{
 .part1{
     margin-bottom:20px;
 }
+@media print{
+    .part1{
+        margin-bottom: 2cm;
+    }
+}
 .part1 img{
     height:400px;
     width:550px;
     float:right;
+}
+@media print{
+    .part1 img{
+        /* text-align: center; */
+        height:400px;
+        width:550px; 
+        margin-bottom: 1.5cm;
+    }
 }
 .part1 p{
     margin-top:20px;
@@ -26,6 +44,15 @@ h2{
 	column-width:150px;	
 	column-rule:1px solid black;	
 }
+@media print{
+    .part1 p{
+        width:100%;
+        column-count:3;    
+        column-gap:20px;		
+        column-width:150px;	
+        column-rule:1px solid black;
+    }
+}
 .part3{
     margin-top:50px;
 }
@@ -33,6 +60,12 @@ h2{
     height:530px;
     width:400px;
     float:left;
+}
+@media print{
+    .part3 img{
+        height:530px;
+        width:400px;
+    }
 }
 .part3 p{
     display:inline-block;
@@ -43,4 +76,13 @@ h2{
 	column-gap:20px;		
 	column-width:150px;	
 	column-rule:1px solid black;
+}
+@media print{
+    .part3 p{
+        width:100%;
+        column-count:3;    
+        column-gap:10px;		
+        column-width:200px;	
+        column-rule:1px solid black; 
+    }
 }
