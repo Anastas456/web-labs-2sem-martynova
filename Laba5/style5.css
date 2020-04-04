@@ -12,7 +12,6 @@ h2{
 }
 .part1{
     margin-bottom:20px;
-    border: 1px solid green;
 }
 .part1 img{
     height:400px;
@@ -21,28 +20,26 @@ h2{
 }
 .part1 p{
     margin-top:20px;
-    border:1px solid red;
-    padding:10px;
     height:380px;
     column-count:2;    
 	column-gap:20px;		
 	column-width:150px;	
 	column-rule:1px solid black;	
 }
-.part2{
-    margin-bottom:20px;
-    border:1 px solid yellow;
+.part3{
+    margin-top:50px;
 }
-.part2 p{
-    
-    height:300px;
-    column-count:3;    
-	column-gap:20px;		
-	column-width:150px;	
-	column-rule:1px solid black;
+.part3 img{
+    height:530px;
+    width:400px;
+    float:left;
 }
 .part3 p{
-    column-count:3;    
+    display:inline-block;
+    padding:0 20px;
+    height:500px;
+    width:770px;
+    column-count:2;    
 	column-gap:20px;		
 	column-width:150px;	
 	column-rule:1px solid black;
