@@ -607,6 +607,7 @@
 .categories__types__jackets,
 .categories__types__overalls{
     display: inline-block;
+    margin-left:30px;
 }
 @media screen and (max-width:768px){
     .categories__types__shirts,
