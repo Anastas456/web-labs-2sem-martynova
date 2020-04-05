@@ -1,3 +1,8 @@
+@media screen and (max-width:768px){
+    body{
+        width:100%;
+    }
+}
 /*Заголовок*/
 .header{
     position: absolute;
@@ -54,7 +59,7 @@
         top:25px;
     }
     .main-page__mini-menu li{
-        display: inline;
+       display: inline;
     }
 }
 .main-page__mini-menu__a{
@@ -241,7 +246,7 @@
 }
 @media screen and (max-width:768px){
     .main-page__links__ul{
-        width:215px;
+        width:210px;
         height:40px;
         bottom: -45px;
         left:-790px;
@@ -593,7 +598,6 @@
 }
 @media screen and (max-width:768px){
     .categories__types{
-        border:1px solid red;
         left:45px;
         top:150px;
     }
@@ -605,17 +609,11 @@
     display: inline-block;
 }
 @media screen and (max-width:768px){
-    .categories__types__jeans,
     .categories__types__shirts,
     .categories__types__jackets,
     .categories__types__overalls{
-        border:1px solid red;
+        margin-left:30px;
     }
-}
-.categories__types__shirts,
-.categories__types__jackets,
-.categories__types__overalls{
-    margin-left:30px;
 }
 @media screen and (max-width:768px){
     .categories__types__shirts{
@@ -684,7 +682,7 @@
 }
 @media screen and (max-width:768px){
     .footer{
-        display:none;
+        top:3420px;
     }
 }
 .footer__h1{
@@ -699,6 +697,12 @@
     font-size: 24px;
     line-height: 28px;
     color: #FFFFFF;
+}
+@media screen and (max-width:768px){
+    .footer__h1{
+        left:347px;
+        top:30px;
+    }
 }
 .footer__menu1{
     position: relative;
@@ -721,6 +725,12 @@
     color: #FFFFFF;
     margin-right: 35px;
 } 
+@media screen and (max-width:768px){
+    .footer__menu1{
+        left:86px;
+        top:46px;
+    }
+}
 .footer__menu2{
     position: relative;
     width: 300px;
@@ -731,4 +741,10 @@
     list-style: none;
     display:inline;
     margin-right: 30px;
+}
+@media screen and (max-width:768px){
+    .footer__menu2{
+        left:260px;
+        top:43px;
+    }
 }
