@@ -741,14 +741,67 @@
     .main-page__vector{
         display: none;
     }
-
-
     .catalog{
-        display:none;
+        border:1px solid red;
+        top:720px;
+    }
+    .catalog__h2{
+        top:30px;
+        left:15px;
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .catalog__p{
+        font-size: 16px;
+        font-weight: 500;
+        top:640px;
+        left:129px;
+    }
+    .catalog__good1,
+    .catalog__good2,
+    .catalog__good3,
+    .catalog__good4{
+        border:1px solid red;
+    }
+    .catalog__good1__img,
+    .catalog__good2__img,
+    .catalog__good3__img,
+    .catalog__good4__img{
+        width:130px;
+        height:160px;
+    }
+    .catalog__good1,
+    .catalog__good3{
+        margin-left:15px;
+    }
+    .catalog__good3,
+    .catalog__good4{
+        margin-top:30px;
+    }
+    .catalog__good1__text1,
+    .catalog__good2__text1,
+    .catalog__good3__text1,
+    .catalog__good4__text1{
+        margin-top:5px;
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .catalog__good1__text2,
+    .catalog__good2__text2,
+    .catalog__good3__text2,
+    .catalog__good4__text2{
+        margin-top:-5px;
+        font-size: 14px;
+        font-weight: bold;
     }
     .sale{
         display:none;
     }
+
+
+
+
+
     .categories{
         display:none;
     }
