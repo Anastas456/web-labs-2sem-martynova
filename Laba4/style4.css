@@ -832,14 +832,83 @@
         left:0;
         top:1671px;
     }
-
-
-
-
-
     .categories{
-        display:none;
+        border:1px solid red;
+        top:1900px;
     }
+    .categories__h2{
+        top:30px;
+        left:15px;
+        font-size: 26px;
+        font-weight: bold;
+    }
+    .categories__p{
+        font-size: 16px;
+        font-weight: 500;
+        left:129px;
+        top:548px;
+    }
+    .categories__types{
+        border:1px solid red;
+        top:140px;
+        left:0;
+    }
+    .categories__types__jeans,
+    .categories__types__shirts,
+    .categories__types__jackets,
+    .categories__types__overalls{
+        border: 1px solid red;
+    }
+    .categories__types__jeans__img,
+    .categories__types__jackets__img{
+        width:130px;
+        height:160px;
+    }
+    .categories__types__shirts__img,
+    .categories__types__overalls__img{
+        width:130px;
+        height:126px;
+    }
+    .categories__types__jeans{
+       position: relative;
+       top:0;
+       left:15px;
+    }
+    .categories__types__shirts{
+        position: relative;
+        top:-35px;
+        left:0px;
+    }
+    .categories__types__overalls{
+        position: relative;
+        top:-90px;
+        left:-155px;
+    }
+    .categories__types__jackets{
+        position: relative;
+        top:-90px;
+        left:162px;
+    }
+    .categories__types__jeans__p,
+    .categories__types__shirts__p,
+    .categories__types__jackets__p,
+    .categories__types__overalls__p{
+        font-size: 16px;
+        font-weight: 500;
+        top:-15px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
     .footer{
         display: none;;
     }
