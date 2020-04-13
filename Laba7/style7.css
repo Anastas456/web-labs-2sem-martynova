@@ -624,14 +624,39 @@
     .categories__types{
         left:45px;
         top:150px;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 30px;
+        grid-row-gap:50px;
+        justify-items: start;
+        align-items: start;
+        grid-template-areas: 
+        "jeans shirts"
+        "overalls jackets";
     }
-    .categories__types__jeans,
+    .categories__types__jeans{
+        grid-area: jeans;
+    }
+    .categories__types__shirts{
+        grid-area: shirts;
+    }
+    .categories__types__jackets{
+        grid-area: jackets;
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    .categories__types__overalls{
+        grid-area: overalls;
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    /* .categories__types__jeans,
     .categories__types__shirts,
     .categories__types__jackets,
     .categories__types__overalls{
          margin-left:30px;             
-    }
-    .categories__types__shirts{
+    } */
+    /* .categories__types__shirts{
         position: relative;
         top:-70px;
     }
@@ -653,7 +678,7 @@
         margin-left:0;
     }
     .categories__types__jeans{
-        margin-left:-5px;
+        margin-left:-5px; */
     }
     .categories__types__jeans__img{
         width:304px;
@@ -697,7 +722,6 @@
         margin-left:-35px;
     }
 }
-
 @media only screen and (max-width:320px){
     .main-page{
         height:656px;
