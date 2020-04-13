@@ -209,8 +209,10 @@
     grid-template-rows: 1fr;
     grid-template-columns: repeat(4, 272px);
     grid-gap: 30px;
+    justify-items: start;
+    align-items: start;
     margin-top:110px;
-    margin-left:98px;
+    margin-left:110px;
 }
 .catalog__good1,
 .catalog__good2,
@@ -439,7 +441,7 @@
     list-style: none;
     display: inline;
 }
- .footer__menu1__li__a{
+.footer__menu1__li__a{
     font-family: Work Sans;
     font-style: normal;
     font-weight: 500;
@@ -467,12 +469,7 @@
     display:inline;
     margin-right: 30px;
 }
-.sale,
-.categories,
-.footer{
-    display:none;
-}
-/*
+
 @media only screen and (max-width:768px){
     .main-page{
         height:527px;
@@ -567,13 +564,26 @@
         left:648px;
         top:60px;
     }
-    .catalog__good1{
+    .catalog__goods{
+        display:grid;
+        border:1px solid yellow;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(2, 324px);
+        grid-column-gap: 30px;
+        grid-row-gap:50px;
+        justify-items: start;
+        align-items: start;
+        margin-top:180px;
+        margin-left:45px;
+
+    }
+    /* .catalog__good1{
         margin-left:30px;
     }
     .catalog__good1,
     .catalog__good2{
         margin-top:150px;
-    }
+    } */
     .catalog__good1__img,
     .catalog__good2__img,
     .catalog__good3__img,
@@ -584,37 +594,37 @@
     .sale__image1{
         width:404px;
         height:287px;
-        top:1950px;
-        left:33px;
+        top:1930px;
+        left:45px;
     }
     .sale__image2{
         width:280px;
         height:287px;
-        left:435px;
-        top:1950px;
+        left:447px;
+        top:1930px;
 
     }
     .sale__mini{
         width:260px;
         height:247px;
-        left:435px;
-        top:1970px;
+        left:447px;
+        top:1950px;
     }
     .sale__mini__h3{
         width:238px;
         height:20px;
         top:20px;
-        left:30px;
+        left:37px;
         font-size: 16px;
     }
     .sale__mini__h2{
         top:5px;
-        left:30px;
+        left:37px;
     }
     .sale__mini__button{
         width:148px;
         height:58px;
-        left:30px;
+        left:37px;
         top:25px;
     }
     .sale__mini__button__text{
@@ -707,6 +717,7 @@
         margin-left:-35px;
     }
 }
+/*
 @media only screen and (max-width:320px){
     .main-page{
         height:656px;
