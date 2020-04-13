@@ -5,7 +5,6 @@
     top:0;
     left:0;
     height:67px;
-    /* height:10em; */
     width:100%;
     background: white;
 }
@@ -204,7 +203,6 @@
   color: #151C22;  
 }
 .catalog__goods{
-    border:1px solid yellow;
     display:grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(4, 272px);
@@ -214,24 +212,6 @@
     margin-top:110px;
     margin-left:110px;
 }
-.catalog__good1,
-.catalog__good2,
-.catalog__good3,
-.catalog__good4{
-    /* display: inline-block;
-    float:left; */
-    border:1px solid red;
-}/* 
-.catalog__good1{
-    margin-top:120px;
-    margin-left:120px;
-}
-.catalog__good2,
-.catalog__good3,
-.catalog__good4{
-    margin-left:30px;
-    margin-top:120px;
-}*/
 .catalog__good1__text1,
 .catalog__good2__text1,
 .catalog__good3__text1,
@@ -558,7 +538,6 @@
         font-size:28px;
         top:50px;
         left:45px;
-
     }
     .catalog__p{
         left:648px;
@@ -566,7 +545,6 @@
     }
     .catalog__goods{
         display:grid;
-        border:1px solid yellow;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: repeat(2, 324px);
         grid-column-gap: 30px;
@@ -577,13 +555,6 @@
         margin-left:45px;
 
     }
-    /* .catalog__good1{
-        margin-left:30px;
-    }
-    .catalog__good1,
-    .catalog__good2{
-        margin-top:150px;
-    } */
     .catalog__good1__img,
     .catalog__good2__img,
     .catalog__good3__img,
@@ -717,7 +688,7 @@
         margin-left:-35px;
     }
 }
-/*
+
 @media only screen and (max-width:320px){
     .main-page{
         height:656px;
@@ -806,12 +777,6 @@
         top:640px;
         left:129px;
     }
-    /* .catalog__good1,
-    .catalog__good2,
-    .catalog__good3,
-    .catalog__good4{
-        border:1px solid red;
-    } */ /*
     .catalog__good1__img,
     .catalog__good2__img,
     .catalog__good3__img,
@@ -819,13 +784,16 @@
         width:130px;
         height:160px;
     }
-    .catalog__good1,
-    .catalog__good3{
+    .catalog__goods{
+        display:grid;
+        grid-template-rows: repeat (2, 1fr);
+        grid-template-columns: repeat(2, 130px);
+        grid-column-gap: 30px;
+        grid-row-gap:30px;
+        justify-items: start;
+        align-items: start;
+        margin-top:118px;
         margin-left:15px;
-    }
-    .catalog__good3,
-    .catalog__good4{
-        margin-top:30px;
     }
     .catalog__good1__text1,
     .catalog__good2__text1,
@@ -843,9 +811,6 @@
         font-size: 14px;
         font-weight: bold;
     }
-    /* .sale{
-        border:1px solid green;
-    } *//*
     .sale__image2{
         width:320px;
         height:226px;
@@ -901,12 +866,6 @@
         top:140px;
         left:0;
     }
-    /* .categories__types__jeans,
-    .categories__types__shirts,
-    .categories__types__jackets,
-    .categories__types__overalls{
-        border: 1px solid red;
-    } *//*
     .categories__types__jeans__img,
     .categories__types__jackets__img{
         width:130px;
@@ -998,5 +957,4 @@
         left:-20px;
         top:-100px; 
     }
-    
-}*/
+}
