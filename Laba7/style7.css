@@ -1,4 +1,3 @@
-
 /*Заголовок*/
 .header{
     position: absolute;
@@ -362,13 +361,24 @@
     position: absolute;
     top:129px;
     left:98px;
+    display:grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    justify-items: start;
+    align-items: start;
+    border:1px solid yellow;
+}
+.categories__types a{
+    text-decoration: none;
 }
 .categories__types__jeans,
 .categories__types__shirts,
 .categories__types__jackets,
 .categories__types__overalls{
-    display: inline-block;
-    margin-left: 30px;           
+    /* display: inline-block;
+    margin-left: 30px;            */
+    border:1px solid red;
 }
 .categories__types__jeans__p,
 .categories__types__shirts__p,
@@ -449,7 +459,6 @@
     display:inline;
     margin-right: 30px;
 }
-
 @media only screen and (max-width:768px){
     .main-page{
         height:527px;
