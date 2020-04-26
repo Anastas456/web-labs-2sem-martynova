@@ -1,55 +1,175 @@
-.sky{
+.wall{
     position: absolute;
     top:0;
     left:0;
     width:100%;
-    height:60%;
-    background: linear-gradient(to top, rgb(169, 228, 255), rgb(25, 157, 209) );
+    height:68%;
+    background: grey;
 }
-.water{
+.table{
     position: absolute;
     left:0;
-    top:440px;
+    top:512px;
     width:100%;
-    height:41%;
-    background-color: rgb(33, 236, 236);
+    height:32%;
+    background-color: brown;
 }
-.lodka{
-    width: 220px;
-    height:300px;
+.drums{
     position: relative;
-    top:-200px;
-    animation:sail 15s linear infinite;
+    top:-50px;
+    left:1000px;
 }
-@keyframes sail{
-    0%{
-        top:0;
-        left:0;
-    }
-    50%{
-        top:-50%;
-        left:50%;
-    }
-    100%{
-        top:0;
-        left:100%;
-    }
-}
-.cloud1{
-    width:500px;
-    height:300px;
+.container {
+    height: 200px;
+    width: 200px;
     position: relative;
-    animation:move 30s linear infinite;
 }
-.cloud2{
-    position:relative;
-    animation:move 30s linear infinite;
+.clock {
+    background: #BDD0D7;
+    border-radius: 100%;
+    box-shadow: 6px 6px 0 #ABBABF;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top:30px;
+    left:1050px;
 }
-@keyframes move{
-    0%{
-        left:0;
-    }
-    100%{
-        left:100%;
-    }
+.clock-inner {
+    background: #f9f9f9;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    left: calc(50% - 80px);
+    top: calc(50% - 80px);
+  }
+/* .clock-numbers {
+    padding-left: 0;
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    left: calc(50% - 60px);
+    top: calc(50% - 60px);
+    list-style: none;
+    margin: 0;
+  } */
+  /* .clock-numbers li {
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    margin: -10px;
+    position: absolute;
+    text-align: center;
+    font-family: 'Special Elite', cursive;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.3);
+    color: #544E3E;
+    font-weight: bold;
+  }
+  .clock-numbers li:nth-child(1) {
+    left: 50%;
+    top: 0;
+  }
+  .clock-numbers li:nth-child(2) {
+    right: 0;
+    top: 50%;
+  }
+  .clock-numbers li:nth-child(3) {
+    bottom: 0;
+    left: 50%;
+  }
+  .clock-numbers li:nth-child(4) {
+    left: 0;
+    top: 50%;
+  } */
+.clock-minutes {
+    height: 60px;
+    width: 2px;
+    background: #D56851;
+    border-radius: 2px;
+    position: absolute;
+    top: calc(50% - 60px);
+    left: calc(50% - 1px);
+    /* -webkit-transform-origin: 1px 60px; */
+    transform-origin: 1px 60px;
+    /* -webkit-animation: clock 60s steps(60, end) infinite;
+    -moz-animation: clock 60s steps(60, end) infinite; */
+    animation: clock 60s steps(60, end) infinite;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+  }
+  .clock:hover .clock-minutes{
+    /* -webkit-animation-play-state: paused; */
+    animation-play-state: paused;
+  }
+.clock-minutes:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #D56851;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+    top: calc(100% - 4px);
+    left: calc(100% - 5px); 
+}
+  /* @-webkit-keyframes clock {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(360deg);}
+  }
+  @-moz-keyframes clock {
+    from {-moz-transform: rotate(0deg);}
+    to {-moz-transform: rotate(360deg);}
+  }*/ 
+@keyframes clock {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+.cat{
+  position:relative;
+  top:20px;
+  left:650px;
+  animation:cat 6s linear infinite;
+}
+@keyframes cat{
+  0%{
+    transform: rotate(20deg);
+  }
+  50%{
+    transform: rotate(-20deg);
+  }
+  100%{
+    transform: rotate(20deg);
+  }
+}
+.window{
+  width:300px;
+  height:300px;
+  position:relative;
+  z-index:3;
+  top:-190px;
+  left:190px;
+}
+.sky{
+  width:280px;
+  height:280px;
+  background-color:blue;
+  position:relative;
+  z-index:1;
+  top:100px;
+  left:200px;
+}
+.bird{
+  width:100px;
+  height:100px;
+  position:relative;
+  z-index:5;
+  top:-330px;
+  animation:fly 6s ease infinite;
+}
+@keyframes fly{
+  50%{
+    top:-380px;
+  }
+  100%{
+    top:-330px;
+  }
 }
