@@ -11,7 +11,7 @@
     left:0;
     top:512px;
     width:100%;
-    height:32%;
+    height:35%;
     background-color: brown;
 }
 .drums{
@@ -269,4 +269,36 @@
 .yellow-blok3{
   left:900px;
   top:-640px;
+}
+.cups{
+  width:100px;
+  height:200px;
+  transform: rotate(180deg);
+  position: relative;
+}
+.cup1{
+  top:-50px;
+  left:-200px;
+}
+.cup2{
+  top:-50px;
+  left:-100px;
+}
+.cup3{
+  top:-50px;
+  z-index: 3;
+}
+.ball{
+  width:30px;
+  height:30px;
+  background-color: orange;
+  border-radius: 100%;
+  position: relative;
+  z-index:1;
+  top:-130px;
+  left:645px;
+}
+.cups:hover{
+  transition:0.5s ease-in-out initial;
+  transform:translateY(-100px);
 }
