@@ -1,4 +1,6 @@
-
+html{
+    width:100%;
+}
 /*Заголовок*/
 .header{
     position: absolute;
@@ -179,7 +181,7 @@
     position: absolute;
     width: 178px;
     height: 21px;
-    left: 98px;
+    left: 114px;
     /* top: 814px; */
     font-family: Work Sans;
     font-style: normal;
@@ -335,7 +337,7 @@
     position: absolute;
     width: 274px;
     height: 21px;
-    left: 98px;
+    left: 115px;
     top: 21px;
     font-family: Work Sans;
     font-style: normal;
@@ -363,7 +365,7 @@
 .categories__types{
     position: absolute;
     top:129px;
-    left:98px;
+    left:90px;
 }
 .categories__types__jeans,
 .categories__types__shirts,
@@ -371,6 +373,11 @@
 .categories__types__overalls{
     display: inline-block;
     margin-left: 30px;           
+}
+.categories__types__shirts,
+.categories__types__overalls{
+    position: relative;
+    top:-59px;
 }
 .categories__types__jeans__p,
 .categories__types__shirts__p,
@@ -399,24 +406,24 @@
     background:#151C22;
 }
 .footer__h1{
+    width:100px;
     position: relative;
     top:50px;
-    left:700px;
-    width: 75px;
-    height: 17px;
+    left:692px;
     font-family: Work Sans;
     font-style: normal;
     font-weight: 800;
     font-size: 24px;
     line-height: 28px;
     color: #FFFFFF;
+    display:inline-block;
 }
 .footer__menu1{
     position: relative;
     width: 650px; 
    /* height: 13px;  */
-    left: 445px; 
-    top: 72px; 
+    left: 340px; 
+    top: 112px; 
     display: inline-block;
 }
 .footer__menu1__li{
@@ -444,7 +451,7 @@
     position: relative;
     width: 300px;
     left: 605px; 
-    top: 92px; 
+    top: 122px; 
 }
 .footer__menu2__li{
     list-style: none;
@@ -539,7 +546,7 @@
         height:20px;
         font-size:28px;
         top:50px;
-        left:45px;
+        left:28px;
 
     }
     .catalog__p{
@@ -604,14 +611,14 @@
         top:2300px;
     }
     .categories__h2{
-        left:45px;
+        left:28px;
     }
     .categories__p{
         left:648px;
         top:33px;
     }
     .categories__types{
-        left:45px;
+        left:35px;
         top:150px;
     }
     .categories__types__jeans,
@@ -666,17 +673,17 @@
     .footer__h1{
         border:none;
         left:347px;
-        top:30px;
+        top:40px;
     }
     .footer__menu1{
         display: inline-block;
-        left:86px;
-        top:46px;
-        width:650px;
+        left:-10px;
+        top:107px;
+        width:600px;
     }
     .footer__menu2{
         left:260px;
-        top:43px;
+        top:132px;
     }
     .footer__menu1__ul1,
     .footer__menu1__ul2{
@@ -922,8 +929,8 @@
     .footer__h1{
         font-weight: 800;
         font-size: 24px;
-        top:25px;
-        left:15px;
+        top:-185px;
+        left:22px;
     }
     .footer__menu1{
         width:200px;
@@ -963,8 +970,13 @@
         margin-left: 0;
     }
     .footer__menu2{
-        left:-20px;
-        top:-100px; 
+        left:-15px;
+        top:-60px; 
     }
     
+}
+@media screen and (max-width:1400px){
+    html,body{
+        margin:0 auto;
+    }
 }
