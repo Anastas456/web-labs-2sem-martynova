@@ -1,15 +1,17 @@
 .main{
+    width: auto;
     display:flex;
     flex-flow: row wrap;
-    margin:auto;
+    margin:0;
     font-family: Sarabun;
+    background-color: #c6ccd8;
 }
 .main > * {
     flex: 1 100%;
   }
 header{
     height:80px;
-    background: #a0302d;
+    background: #85a1c1;
 }
 .menu{
     display:flex;
@@ -31,10 +33,9 @@ header{
     padding: 1em;
 }
 .menu li:hover{
-    background: #3b1615;
+    background: #274b69;
 }
 .text{
-    background-color:#c09669;
     height:120px;
     display:flex;
     align-items: flex-end;
@@ -48,7 +49,6 @@ header{
     justify-content: space-between;
 }
 .list1 {
-    background-color: gold;
     padding:10px;
     flex-grow: 1;
     order:2;
@@ -58,17 +58,15 @@ header{
     height:550px;
 }
 .list2 {
-    background-color: hotpink;
     padding:10px;
     flex-grow: 2;
     order:1;
 }
 .list2 img{
-    width:800px;
-    height:500px;
+    width:850px;
+    height:550px;
 }
 .list3 {
-    background-color: blue;
     padding:10px;
     flex-grow: 1;
     order:3;
@@ -78,7 +76,6 @@ header{
     height:450px;
 } 
 .list4 {
-    background-color: purple;
     padding:10px;
     flex-grow: 2;
     order:4;
@@ -88,5 +85,9 @@ header{
     height:450px;
 }
 footer {
-    background: lightgreen;
+    margin-top:20px;
+    height:80px;
+    background: #3f4d63;
+    color:white;
+    text-align: center;
 }
