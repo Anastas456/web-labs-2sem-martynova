@@ -1,14 +1,13 @@
 .main{
     display:flex;
     flex-flow: row wrap;
-    margin:-9px;
+    margin:auto;
     font-family: Sarabun;
 }
 .main > * {
     flex: 1 100%;
   }
 header{
-    width:100%;
     height:80px;
     background: #a0302d;
 }
@@ -46,28 +45,47 @@ header{
 .lists{
     display:flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    height:400px;
+    justify-content: space-between;
 }
 .list1 {
     background-color: gold;
     padding:10px;
-    flex-grow: 2;
+    flex-grow: 1;
+    order:2;
 }  
+.list1 img{
+    width:450px;
+    height:550px;
+}
 .list2 {
     background-color: hotpink;
     padding:10px;
-    flex-grow: 1;
+    flex-grow: 2;
+    order:1;
+}
+.list2 img{
+    width:800px;
+    height:500px;
 }
 .list3 {
     background-color: blue;
     padding:10px;
     flex-grow: 1;
-}  
+    order:3;
+} 
+.list3 img{
+    width:350px;
+    height:450px;
+} 
 .list4 {
     background-color: purple;
     padding:10px;
-    flex-grow: 1;
+    flex-grow: 2;
+    order:4;
+}
+.list4 img{
+    width:700px;
+    height:450px;
 }
 footer {
     background: lightgreen;
