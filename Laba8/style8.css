@@ -43,3 +43,32 @@ header{
     padding:10px;
     text-align: center;
 }
+.lists{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height:400px;
+}
+.list1 {
+    background-color: gold;
+    padding:10px;
+    flex-grow: 2;
+}  
+.list2 {
+    background-color: hotpink;
+    padding:10px;
+    flex-grow: 1;
+}
+.list3 {
+    background-color: blue;
+    padding:10px;
+    flex-grow: 1;
+}  
+.list4 {
+    background-color: purple;
+    padding:10px;
+    flex-grow: 1;
+}
+footer {
+    background: lightgreen;
+}
