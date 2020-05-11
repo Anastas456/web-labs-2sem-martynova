@@ -11,18 +11,22 @@ body{
 }
 .main > * {
     flex: 1 100%;
-  }
+}
 header{
     height:80px;
     background: #85a1c1;
+    display:flex;
+    padding:5px;
+}
+header h2{
+    color:#274b69;
 }
 .menu{
     display:flex;
     flex-flow: row wrap;
     justify-content: flex-end;
     list-style: none;
-    align-items: center;
-    /* margin: 0;  */
+    align-items: flex-start;
     
 }
 .menu li{
@@ -39,12 +43,15 @@ header{
     background: #274b69;
 }
 .text{
-    height:120px;
+    height:150px;
     display:flex;
-    align-items: flex-end;
+    flex-wrap: wrap;
     justify-content: center;
-    padding:10px;
+    padding:15px;
     text-align: center;
+}
+.text h1{
+    color:#274b69;
 }
 .lists{
     display:flex;
