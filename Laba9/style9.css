@@ -1,0 +1,35 @@
+body{
+    font-family:Rubik;
+    font-size:1.5em;
+    margin:0;
+}
+header{
+    display:flex;
+    width: 100%;
+    height:100px;
+    background:#82efee;
+}
+header h2{
+    color:#006170;
+    padding:0 10px;
+    flex-grow: 2;
+}
+header nav{
+    padding:10px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+header nav li{
+    display:inline;
+    list-style-type: none;
+    padding:10px;
+}
+header nav li a{
+    color:#000001;
+    text-decoration: none;
+}
+header nav li:hover{
+    transition: all 0.2s ease-in-out;
+    font-size:1.2em;
+}
