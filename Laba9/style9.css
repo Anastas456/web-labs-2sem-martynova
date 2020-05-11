@@ -12,7 +12,7 @@ header{
     background:#89bdd6;
 }
 header h2{
-    color:#29586c;
+    color:#184355;
     padding:0 10px;
     flex-grow: 2;
 }
@@ -44,15 +44,16 @@ header nav li:hover{
     "foto text";
     justify-content:center;
 }
-.main h2{
+.main h3{
     grid-area: h;
     justify-self: center;
     color:#29586c;
 }
 .main img{
     grid-area: foto;
-    width:65%;
+    width:80%;
     justify-self: center;
+    align-self: center;
 }
 .main p{
     grid-area:text;
