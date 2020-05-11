@@ -8,10 +8,11 @@ body{
     display:grid;
     grid-template-columns: 200px auto auto auto 300px;
     grid-template-rows: 100px 250px 250px 94px;
-    /* grid-template-areas:
+    grid-template-areas:
     "header header header header header"
-    "left-menu left-menu content content content sidebar"
-    "footer footer footer footer footer"; */
+    "left-menu content content content sidebar"
+    "left-menu content content content sidebar"
+    "footer footer footer footer footer";
     grid-row-gap:20px;
     grid-column-gap: 10px;
     justify-content: space-between;
@@ -26,8 +27,8 @@ header{
 header h1{
     text-align: center;
 }
-.left-menu{
-    grid-area:left-menu;
+nav{
+    grid-area:left-menu; 
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -64,6 +65,7 @@ img{
     height:100px;
 }
 .one{
+    grid-area: content;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -72,6 +74,7 @@ img{
     align-self: center;
 }
 .two{
+    grid-area: content;
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
@@ -80,6 +83,7 @@ img{
     align-self: center;
 }
 .three{
+    grid-area: content;
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
@@ -88,6 +92,7 @@ img{
     align-self: center;
 }
 .four{
+    grid-area: content;
     grid-column-start: 2;
     grid-column-end: 5;
     grid-row-start: 2;
