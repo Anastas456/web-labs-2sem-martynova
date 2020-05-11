@@ -58,3 +58,20 @@ header nav li:hover{
 .main p{
     grid-area:text;
 }
+/* caption{
+    text-align: center;
+    color:#6d6e41;
+} */
+.forma{
+    margin-top:30px;
+    border:1px solid red;
+    height:200px;
+    background:#a9845c;
+    line-height: 2;
+}
+.forma label{
+    padding:10px;
+}
+.forma input{
+    height:2.5em;
+}
