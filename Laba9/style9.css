@@ -1,16 +1,18 @@
 body{
     font-family:Rubik;
     font-size:1.5em;
+    line-height: 1.5;
     margin:0;
+    background:#f2f5f7;
 }
 header{
     display:flex;
     width: 100%;
     height:100px;
-    background:#82efee;
+    background:#89bdd6;
 }
 header h2{
-    color:#006170;
+    color:#29586c;
     padding:0 10px;
     flex-grow: 2;
 }
@@ -26,10 +28,32 @@ header nav li{
     padding:10px;
 }
 header nav li a{
-    color:#000001;
+    color:#29586c;
     text-decoration: none;
 }
 header nav li:hover{
     transition: all 0.2s ease-in-out;
     font-size:1.2em;
+}
+.main{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+    "h h"
+    "foto text";
+    justify-content:center;
+}
+.main h2{
+    grid-area: h;
+    justify-self: center;
+    color:#29586c;
+}
+.main img{
+    grid-area: foto;
+    width:65%;
+    justify-self: center;
+}
+.main p{
+    grid-area:text;
 }
