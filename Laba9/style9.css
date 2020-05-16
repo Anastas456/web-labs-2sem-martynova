@@ -55,23 +55,62 @@ header nav li:hover{
     justify-self: center;
     align-self: center;
 }
-.main p{
+.main ul{
     grid-area:text;
 }
-/* caption{
-    text-align: center;
-    color:#6d6e41;
-} */
 .forma{
     margin-top:30px;
-    border:1px solid red;
-    height:200px;
+    padding:15px;
+    height:300px;
     background:#a9845c;
+    color:#f2f5f7;
     line-height: 2;
+    
 }
-.forma label{
+.forma h3{
+    text-align: center;
+    color:#29586c;
+}
+form{
+  display:grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    justify-content:start;  
+    grid-column-gap: 30px;
+}
+form label{
     padding:10px;
+}    
+form input{
+    height:2.5em;  
 }
-.forma input{
-    height:2.5em;
+#label-name{
+    grid-row-start: 1;
+    grid-row-end:2;
+    grid-column-start:1 ;
+    grid-column-end:2;
+}
+#label-mail{
+    grid-row-start: 2;
+    grid-row-end:3;
+    grid-column-start:1 ;
+    grid-column-end:2;
+}
+#name{
+    grid-row-start: 1;
+    grid-row-end:2;
+    grid-column-start:2 ;
+    grid-column-end:3;
+}
+#mail{
+    grid-row-start: 2;
+    grid-row-end:3;
+    grid-column-start:2 ;
+    grid-column-end:3;
+}
+#button{
+    grid-row-start: 3;
+    grid-row-end:4;
+    grid-column-start:1 ;
+    grid-column-end:3;
 }
