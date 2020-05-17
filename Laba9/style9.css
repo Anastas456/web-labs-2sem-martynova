@@ -4,9 +4,10 @@ body{
     line-height: 1.5;
     margin:0;
     background:#f2f5f7;
+    filter:contrast()
 }
 *:focus{
-    border:2px;
+    border:2px solid lightseagreen;
 }
 header{
     display:flex;
@@ -54,12 +55,16 @@ header nav li:hover{
 }
 .main img{
     grid-area: foto;
-    width:80%;
+    width:90%;
     justify-self: center;
     align-self: center;
 }
 .main ul{
     grid-area:text;
+    
+}
+.main ul li{
+    padding:0.3em;
 }
 .forma{
     margin-top:30px;
@@ -119,4 +124,6 @@ form input{
     grid-column-end:3;
     background-color:#6d6e41;
     border-color:#54552d;
+    color:white;
+    font-size:0.7em;
 }
