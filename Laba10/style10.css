@@ -11,19 +11,21 @@ header ul li a {
   text-decoration: none;
 }
 
-header {
+header, footer {
   height: 100px;
   background: #082d3a;
+  color: white;
+}
+
+header {
   margin: -24px;
 }
 
 header nav {
   position: relative;
   top: 25px;
-}
-
-header ul {
-  vertical-align: center;
+  left: 25px;
+  font-size: 1.1em;
 }
 
 header ul li {
@@ -45,6 +47,7 @@ main {
 }
 
 main .block {
+  padding-top: 10px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -71,7 +74,18 @@ main .block p {
   -ms-grid-column: 2;
   grid-area: text;
   color: #000205;
-  -ms-grid-column-align: end;
-      justify-self: end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer {
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+
+footer h2 {
+  text-align: center;
+  padding: 20px;
 }
 /*# sourceMappingURL=style10.css.map */

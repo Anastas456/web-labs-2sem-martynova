@@ -14,19 +14,24 @@ $color_4:#000205;
 %links{
     text-decoration: none;
 }
+%topend{
+    height:100px;
+    background:$color_1;
+    color:$color_2;
+}
 @mixin paddings ($i) {
     padding: $i;
 }
 header{
-    height:100px;
-    background:$color_1;
+    @extend %topend;
     margin:-24px;
     nav{
         position: relative;
         top:25px;
+        left:25px;
+        font-size: 1.1em;
     }
     ul{
-       vertical-align: center;
        li{
         list-style-type: none;
         display:inline;
@@ -44,6 +49,7 @@ header{
 main{
     @include paddings (30px);
     .block{
+        padding-top: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: auto;
@@ -59,9 +65,18 @@ main{
         p{
             grid-area: text;
             color:$color_4;
-            justify-self: end;
+            align-self: center;
         }
-
     }
-    
 }
+footer{
+    @extend %topend;
+    margin-top: 80px;
+    margin-bottom: 0;
+    h2{
+        text-align: center;
+        @include paddings(20px);
+    }
+}
+// доделать footer, использовать затемнение или осветление (darken или lighten),
+// узнать про модуль map
