@@ -3,13 +3,13 @@ body{
     font-size:1.4em;
     line-height: 1.5;
     margin:0;
-    margin:0;
     padding:0;
     background:#a7b8b5;
 }
 $color_1:#082d3a;
 $color_2: white;
 $color_3: #b1a295;
+$color_4:#000205;
 
 %links{
     text-decoration: none;
@@ -27,17 +27,41 @@ header{
     }
     ul{
        vertical-align: center;
-    }
-    li{
+       li{
         list-style-type: none;
         display:inline;
         @include paddings(10px);
-    }
-    a{
+        a{
         color:$color_2;
         @extend %links;
         &:hover{
             color:$color_3;
         }
+        }
     }
+    }
+}
+main{
+    @include paddings (30px);
+    .block{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "img text";
+        grid-gap:20px;
+        justify-content: center;
+        img{
+            grid-area: img;
+            width:100%;
+            padding-top:20px;
+        }
+        p{
+            grid-area: text;
+            color:$color_4;
+            justify-self: end;
+        }
+
+    }
+    
 }

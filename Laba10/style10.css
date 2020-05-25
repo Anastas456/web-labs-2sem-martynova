@@ -3,12 +3,11 @@ body {
   font-size: 1.4em;
   line-height: 1.5;
   margin: 0;
-  margin: 0;
   padding: 0;
   background: #a7b8b5;
 }
 
-header a {
+header ul li a {
   text-decoration: none;
 }
 
@@ -27,17 +26,52 @@ header ul {
   vertical-align: center;
 }
 
-header li {
+header ul li {
   list-style-type: none;
   display: inline;
   padding: 10px;
 }
 
-header a {
+header ul li a {
   color: white;
 }
 
-header a:hover {
+header ul li a:hover {
   color: #b1a295;
+}
+
+main {
+  padding: 30px;
+}
+
+main .block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+      grid-template-areas: "img text";
+  grid-gap: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .block img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img;
+  width: 100%;
+  padding-top: 20px;
+}
+
+main .block p {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: text;
+  color: #000205;
+  -ms-grid-column-align: end;
+      justify-self: end;
 }
 /*# sourceMappingURL=style10.css.map */
