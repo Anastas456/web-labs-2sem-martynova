@@ -14,14 +14,17 @@ $color_4:#000205;
 %links{
     text-decoration: none;
 }
-// %topend{
-//     height:100px;
-//     background:$color_1;
-//     color:$color_2;
-// }
+@function shade($color, $percentage) {
+    @return mix(black, $color, $percentage);
+  }
 @mixin paddings ($i) {
     padding: $i;
 }
+$for_media: (
+  'small': 340px,
+  'medium': 772px,
+  'large': 1200px,
+);
 header{
     // @extend %topend;
     height:100px;
@@ -77,7 +80,7 @@ footer{
     grid-template-columns: 1fr;
     grid-template-rows: 100px;
     justify-content: center;
-    background:$color_1;
+    background:shade($color_1, 50%);
     color:$color_2;
     margin-top: 65px;
     @include paddings(0);
