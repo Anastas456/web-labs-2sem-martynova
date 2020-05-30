@@ -14,47 +14,50 @@ $color_4:#000205;
 %links{
     text-decoration: none;
 }
-%topend{
-    height:100px;
-    background:$color_1;
-    color:$color_2;
-}
+// %topend{
+//     height:100px;
+//     background:$color_1;
+//     color:$color_2;
+// }
 @mixin paddings ($i) {
     padding: $i;
 }
 header{
-    @extend %topend;
+    // @extend %topend;
+    height:100px;
+    background:$color_1;
+    color:$color_2;
     margin:-24px;
-    nav{
-        position: relative;
-        top:25px;
-        left:25px;
-        font-size: 1.1em;
-    }
-    ul{
-       li{
-        list-style-type: none;
-        display:inline;
-        @include paddings(10px);
-        a{
-        color:$color_2;
-        @extend %links;
-        &:hover{
-            color:$color_3;
+    width:101.5%;
+        ul{
+            position: relative;
+            top:25px;
+            left:25px;
+            font-size: 1.1em;
+            width:500px;
+            li{
+                list-style-type: none;
+                display:inline;
+                @include paddings(10px);
+                    a{
+                        color:$color_2;
+                        @extend %links;
+                            &:hover{
+                                color:$color_3;
+                            }
+                    }
+            }
         }
-        }
-    }
-    }
 }
 main{
     @include paddings (30px);
     .block{
-        padding-top: 10px;
+        margin-top: 40px;
         display: grid;
         grid-template-columns: 1fr 1fr ;
         grid-template-rows: auto;
         grid-template-areas:
-        "img text";
+        "img texts";
         grid-gap:20px;
         justify-content: center;
         img{
@@ -63,20 +66,24 @@ main{
             padding-top:20px;
         }
         p{
-            grid-area: text;
+            grid-area: texts;
             color:$color_4;
             align-self: center;
         }
     }
 }
 footer{
-    @extend %topend;
-    margin-top: 80px;
-    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px;
+    justify-content: center;
+    background:$color_1;
+    color:$color_2;
+    margin-top: 65px;
+    @include paddings(0);
     h2{
+        align-self: center;
         text-align: center;
         @include paddings(20px);
     }
 }
-// доделать footer, использовать затемнение или осветление (darken или lighten),
-// узнать про модуль map
